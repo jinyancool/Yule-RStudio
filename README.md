@@ -16,3 +16,8 @@ You’ll need RStudio version 1.2. Grab the preview version here.
 Manual Installation
 
 If the steps above don’t work, you can manually download the Yule-RStudio.rstheme file and place it in .R/rstudio/themes in your R home directory (see path.expand("~")). Then, in the RStudio appearance settings, select the Yule RStudio editor theme.
+
+
+    lab_theme <- fs::path_temp("JhuangLab", ext = "rstheme")
+    download.file("https://github.com/jinyancool/Yule-RStudio/edit/master/Jhuanglab.rstheme", lab_theme)
+    rstudioapi::addTheme(lab_theme, apply = TRUE)
