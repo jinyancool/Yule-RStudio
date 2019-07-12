@@ -19,5 +19,5 @@ If the steps above don’t work, you can manually download the Yule-RStudio.rsth
 
 
     lab_theme <- fs::path_temp("JhuangLab", ext = "rstheme")
-    download.file("https://github.com/jinyancool/Yule-RStudio/edit/master/Jhuanglab.rstheme", lab_theme)
+    download.file("https://raw.githubusercontent.com/jinyancool/Yule-RStudio/master/Jhuanglab.rstheme", lab_theme)
     rstudioapi::addTheme(lab_theme, apply = TRUE)
